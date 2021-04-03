@@ -1,0 +1,195 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    max-width:100%;
+}
+
+body{
+    background-color: gainsboro;
+}
+nav{
+    height:70px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.left-side>a {
+    font-weight: 800;
+}
+span:first-child{
+    color:navy;
+}
+span:nth-child(4) {
+    color: orangered;
+}
+span:nth-child(5) {
+    color: rgb(120,150,100);
+}
+span:nth-child(6) {
+    color: royalblue;
+}
+span >img{
+ width:2rem;
+ height: 2rem;
+}
+.nav-rotate>img{
+     -webkit-animation: spin 4s linear infinite;
+     -moz-animation: spin 4s linear infinite;
+     animation: spin 4s linear infinite;
+}
+
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+.left-side{
+    width:30%;
+    height:100%;
+    display: flex;
+    align-items: center;
+}
+.left-side>a{
+   font-size: xx-large;
+   color:chocolate;
+   margin-left: 2rem;
+   text-decoration: none;
+}
+
+.right-side{
+    width:70%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.right-side>a{
+    float:right;
+    margin: 0px 10px;
+}
+
+a>button{
+    width:5rem;
+    height: 3rem;
+    background-color:lightslategrey;
+    color:#fff;
+    font-size: large;
+    outline: none;
+    border-radius: 0.5rem;
+    font-weight: 800;
+}
+a>button:hover {
+background-color: darkslategrey;
+}
+
+.top-book-heading{
+    color:darkslategrey;
+}
+
+.mycard{
+    height:7rem;
+    background-color: mediumpurple;
+    margin-top: 20px;
+    padding:10px;
+}
+.mycard:hover{
+    background-color: dimgray;
+    box-shadow: 2px 3px 5px rgb(120,150,100);
+}
+
+.myCard-body h4{
+    color: mediumspringgreen;
+}
+
+.myCard-body h4:hover {
+    color:honeydew;
+}
+.myCard-body p {
+    color:#fff;
+    float:right;
+    font-weight: 600;
+}
+
+.myCard-body p:hover{
+    color:lawngreen;
+}
+
+.card{
+    width:100%;
+    height:25rem;
+    margin-top: 10px;
+}
+
+.card img{
+    width:100%;
+    height:18rem;
+}
+
+.card-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-body button{
+    border-radius: 1rem;
+    padding: 0.5rem;
+    outline: none;
+    background-color: cornflowerblue;
+    color:#000000;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.card-body button:hover{
+    background-color: crimson;
+    color:#fff;
+}
+
+.card-body h5{
+    color:darkslategrey;
+}
+.card-body h6 {
+    color: dimgrey;
+}
+
+.card-body span{
+    color: maroon;
+}
+
+
+.myContainer.ng-enter{
+ transition: 0.5s linear all;
+ opacity: 0;
+}
+.myContainer.ng-enter-active{
+    opacity: 1;
+}
+
+ .cartLength{
+     color:crimson;
+     font-size: 1.2rem;
+     font-weight: 600;
+ }
+ .cartLength-span{
+     color:maroon;
+     font-size: 1.3rem;
+     font-weight: 800;
+ }

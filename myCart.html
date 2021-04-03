@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my cart</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+</head>
+<body ng-controller="cartCtrl">
+    
+    <div class="container">
+        <div class="row" ng-if="cartLength"> 
+            <div class="col-12">
+                <div class="cart-para d-flex justify-content-between">
+                    <div><p  class="cartLength">please click on buy button to buy the book</p></div>
+                    <div class="cartLength">total Books in cart- <span class="cartLength-span"> {{cartLength}} </span></div>
+                </div>
+                
+                <div class="card" ng-repeat="book in cart">
+                    <img ng-src={{book.source}} alt="img">
+                    <div class="card-body">
+                        <div>
+                            <h4><span>Book- </span>{{book.title}}</h4>
+                            <h5><span>Author- </span> {{book.author}}</h5>
+                            <h6><span>year- </span>{{book.year}}</h6>
+                        </div>
+                        <div>
+                            <button ng-click="buy(book)">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" ng-hide="cartLength">
+            <div class="col-12">
+                <h4 class="text-danger mt-5 text-center" id="no-book" style="color:red;">No Books in your cart</h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

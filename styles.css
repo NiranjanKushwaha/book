@@ -5,6 +5,11 @@
     max-width:100%;
 }
 
+.row{
+    margin:0px !important;
+    padding: 0px !important;
+}
+
 body{
     background-color: gainsboro;
 }
@@ -116,6 +121,7 @@ background-color: darkslategrey;
 
 .myCard-body h4{
     color: mediumspringgreen;
+    font-size: 1rem;
 }
 
 .myCard-body h4:hover {
@@ -133,13 +139,13 @@ background-color: darkslategrey;
 
 .card{
     width:100%;
-    height:25rem;
+    height:30rem;
     margin-top: 10px;
 }
 
 .card img{
     width:100%;
-    height:18rem;
+    height:22rem;
 }
 
 .card-body{
@@ -148,19 +154,28 @@ background-color: darkslategrey;
     align-items: center;
 }
 
+.card-body-left{
+    width:80%;
+}
+
+.card-body-right {
+    width: 20%;
+}
+
+
 .card-body button{
     border-radius: 1rem;
     padding: 0.5rem;
     outline: none;
     background-color: cornflowerblue;
-    color:#000000;
+    color:#fff;
     font-size: 1.2rem;
     font-weight: 800;
 }
 
 .card-body button:hover{
     background-color: crimson;
-    color:#fff;
+    color:#000;
 }
 
 .card-body h5{
@@ -193,3 +208,121 @@ background-color: darkslategrey;
      font-size: 1.3rem;
      font-weight: 800;
  }
+
+ @media(max-width:780px){
+     nav {
+         height: 50px;
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+     }
+
+     .left-side>a {
+         font-weight: 600;
+         font-size: 1.4rem !important;
+     }
+
+     span>img {
+         width: 1.3rem !important;
+         height: 1.3rem !important;
+     }
+
+   .left-side {
+       width: 40%;
+       height: 100%;
+       display: flex;
+       align-items: center;
+   }
+
+   .left-side>a {
+       font-size: large;
+       margin-left: 1rem;
+   }
+
+   .right-side {
+       width: 60%;
+       height: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: flex-end;
+   }
+
+   .right-side>a {
+       float: right;
+       margin: 0px 5px;
+   }
+
+   a>button {
+       width: 4.5rem;
+       height: 2rem;
+       font-size: large;
+       border-radius: 0.3rem;
+       font-weight: 600;
+   }
+
+.mycard {
+    height: 8rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 1rem;
+    background-color: #10ac84;
+}
+
+
+.myCard-body h4 {
+    color: #130f40;
+}
+
+.myCard-body h4:hover {
+    color: honeydew;
+}
+
+.myCard-body p {
+    color: #fff;
+    float: right;
+    font-weight: 600;
+}
+
+.myCard-body p:hover {
+    color: lawngreen;
+}
+
+.card {
+    width: 100%;
+    height: 25rem;
+    margin-top: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 18rem;
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-body button {
+    border-radius: 1rem;
+    padding: 0.5rem;
+    outline: none;
+    background-color: cornflowerblue;
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.card-body button {
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    outline: none;
+    background-color: cornflowerblue;
+    color: #000000;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+
+}
